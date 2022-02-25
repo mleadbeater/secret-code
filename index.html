@@ -41,18 +41,28 @@
         <!-- This is the start of content for our page -->
         <h1 class="title">Secret code!</h1>
 
-        <div id="app">{{ message }}<
-          /div>
-        <input type="text" id="message">
+        <div id="app"><p>
+          Type your secret message
+          </p>
+        <input type="password" v-model="message">
         <div id="output">
-          {{message}}
+          {{encodedMessage}}
+        </div>
         </div>
 
         <script>
           Vue.createApp({
             data() {
               return {
-                message: 'Hello Vue!'
+                message: 'Hello Vue!',
+                code: {
+                  a:a
+                }
+              }
+            },
+            computed: {
+              encodedMessage() {
+                return this.message
               }
             }
           }).mount('#app')
