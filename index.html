@@ -32,25 +32,31 @@
 
     <!-- Import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="https://unpkg.com/vue@3"></script>
   </head>
   <body>
-
     <!-- The wrapper and content divs set margins and positioning -->
     <div class="wrapper">
       <div class="content" role="main">
         <!-- This is the start of content for our page -->
         <h1 class="title">Secret code!</h1>
 
-        <!-- Instructions on using this project -->
-        <div class="instructions">
-          <h2>
-            Using this project
-          </h2>
-          <input 
-          <button>
-              Click me!
-          </button>
+        <div id="app">{{ message }}<
+          /div>
+        <input type="text" id="message">
+        <div id="output">
+          {{message}}
         </div>
+
+        <script>
+          Vue.createApp({
+            data() {
+              return {
+                message: 'Hello Vue!'
+              }
+            }
+          }).mount('#app')
+        </script>
       </div>
     </div>
   </body>
