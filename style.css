@@ -80,9 +80,9 @@ body {
 
 /* Page structure */
 .wrapper {
-  min-height: var(--wrapper-height);
+  /*min-height: var(--wrapper-height);*/
   display: grid;
-  place-items: center;
+  /*place-items: center;*/
   margin: 0 1rem;
 }
 .content {

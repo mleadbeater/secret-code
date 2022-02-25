@@ -60,7 +60,7 @@
                   h:"re",i:"na",j:"jo",k:"ky",l:"le",m:"ec",n:"in",
                   o:"yo",p:"te",q:"ka",r:"di",s:"ba",t:"se",u:"ma",
                   v:"we",w:"ry",x:"is",y:"ei",z:"by",
-                  A:"Ak",B:"Xi",C:"No",D:"Da",e:"An",f:"Si",g:"Be",
+                  A:"Ak",B:"Xi",C:"No",D:"Da",E:"An",F:"Si",G:"Be",
                   H:"Re",I:"Na",J:"Jo",K:"Ky",L:"Le",M:"Ec",N:"In",
                   O:"Yo",P:"Te",Q:"Ka",R:"Di",S:"Ba",T:"Se",U:"Ma",
                   V:"We",W:"Ry",X:"Is",Y:"Ei",Z:"By"
@@ -75,6 +75,9 @@
                   var letter = msg[i]
                   if (this.code[letter]) {
                     coded += this.code[letter]
+                  }
+                  else {
+                    coded += letter
                   }
                 }
                 return coded
