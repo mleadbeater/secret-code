@@ -54,13 +54,17 @@
           Vue.createApp({
             data() {
               return {
-                message: 'Hello Vue!',
+                message: '',
                 code: {
                   a:"ak",b:"xi",c:"no",d:"da",e:"an",f:"si",g:"be",
                   h:"re",i:"na",j:"jo",k:"ky",l:"le",m:"ec",n:"in",
                   o:"yo",p:"te",q:"ka",r:"di",s:"ba",t:"se",u:"ma",
-                  v:"we",w:"ry",x:"is",y:"ei",z:"by"
-                }
+                  v:"we",w:"ry",x:"is",y:"ei",z:"by",
+                  A:"Ak",B:"Xi",C:"No",D:"Da",e:"An",f:"Si",g:"Be",
+                  H:"Re",I:"Na",J:"Jo",K:"Ky",L:"Le",M:"Ec",N:"In",
+                  O:"Yo",P:"Te",Q:"Ka",R:"Di",S:"Ba",T:"Se",U:"Ma",
+                  V:"We",W:"Ry",X:"Is",Y:"Ei",Z:"By"
+               }
               }
             },
             computed: {
@@ -69,12 +73,8 @@
                 var coded = ""
                 for (var i=0; i<msg.length; i++) {
                   var letter = msg[i]
-                  var replacement = this.code[letter]
-                  if (replacement) {
-                    coded += replacement
-                  }
-                  else {
-                    coded += letter
+                  if (this.code[letter]) {
+                    coded += this.code[letter]
                   }
                 }
                 return coded
