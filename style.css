@@ -135,7 +135,8 @@ h2 {
 }
 
 textarea {
-    font-size:24px
+    font-size:24px;
+  background-color: #00000000;
 }
 
 /* Interactive image */
