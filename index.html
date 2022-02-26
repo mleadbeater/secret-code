@@ -44,10 +44,10 @@
         <div id="app"><p>
           Type your secret message
           </p>
-        <input type="password" v-model="message">
-        <div id="output">
+          <input type="password" v-model="message" size="20"></br>
+        <textarea readonly="true" id="output" rows="3" cols="25">
           {{encodedMessage}}
-        </div>
+        </textarea>
         </div>
 
         <script>

@@ -126,11 +126,16 @@ input {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   transition: 500ms;
+  font-size:24px
 }
 
 /* Subheading */
 h2 {
   color: #2800FF;
+}
+
+textarea {
+    font-size:24px
 }
 
 /* Interactive image */
